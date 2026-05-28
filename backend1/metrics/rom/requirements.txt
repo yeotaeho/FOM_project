@@ -1,0 +1,12 @@
+# ROM sub-package — backend1/requirements.txt 와 동기 (로컬만 설치할 때)
+numpy>=1.26.0
+pandas>=2.2.0
+scipy>=1.12.0
+fastdtw>=0.3.4
+opencv-python>=4.9.0
+mediapipe>=0.10.31,<0.11
+pydantic>=2.6.0
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+httpx>=0.27.0
+python-multipart>=0.0.9

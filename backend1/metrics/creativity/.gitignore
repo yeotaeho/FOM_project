@@ -1,0 +1,19 @@
+# Creativity metric — 로컬 분석 결과·미디어 (Git 제외)
+# output/ 상세 규칙: output/.gitignore
+
+# CLI·API 결과 JSON, 렌더 mp4, 추출 데이터
+output/
+
+# 포즈 모델 (자동 다운로드)
+models/*.task
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 폴더 밖으로 떨어진 stray 결과 (실수 저장 방지)
+creativity_score*.json
+split_result*.mp4
+split_creativity*.mp4
+*.creativity.json

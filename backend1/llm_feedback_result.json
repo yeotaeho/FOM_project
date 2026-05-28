@@ -1,0 +1,79 @@
+{
+  "feedback": "안녕하세요! 분석 결과를 바탕으로 몇 가지 피드백을 드리려고 합니다.\n\n### 전체 평가\n총점 73.8점을 받았으며, 등급은 B입니다. 이 점수는 전반적으로 좋은 성적을 보여줍니다.\n\n### 강점\n1. **파워(82.3점)**: 파워 항목에서 높은 점수를 얻어, 동작의 폭발력과 운동 강도가 굉장히 좋습니다. 특히 움직임이 명확하고 힘이 촉촉하게 전달되는 부분에서는 매우 매력적입니다.\n2. **정확성(78.5점)**: 정확성에서도 좋은 성적을 얻었으며, 이는 주된 동작과 자세가 일치하는 데 큰 도움이 됩니다.\n\n### 개선점\n1. **리듬(68.9점)**: 리듬 항목에서 조금은 아쉬운 점수를 받았습니다. 박자와 동작의 조화가 좀 더 원활해지면 좋을 것 같습니다. 훈련 중에 리듬과 박자를 함께 청취하고 연습하면 도움이 될 것입니다.\n2. **창의성(65.2점)**: 창의성에서도 조금 떨어진 점수를 받았습니다. 다양한 동작 패턴을 시도해보면 흥미로운 변화를 만들어 낼 수 있을 것입니다.\n\n### 우선 연습 포인트\n1. **리듬 연마**: 리듬과 박자에 대한 이해와 익숙해질 필요가 있습니다. 매일 짧은 시간 동안 리듬 연습을 추가하면 큰 도움이 될 것입니다.\n2. **창의적 표현**: 다양한 동작 패턴과 스타일을 탐색하고 시도해보세요. 이는 개인적인 스타일을 형성하는 데 매우 중요합니다.\n\n앞으로 계속해서 노력하시면 훌륭한 댄서가 될 수 있을 거예요!",
+  "model": "qwen2.5:7b-instruct-q4_K_M",
+  "filtered_data": {
+    "scores": {
+      "accuracy": {
+        "score": 78.5,
+        "grade": "B",
+        "mean_similarity": 78.5,
+        "joint_angle_errors": {
+          "left_elbow": 12.5,
+          "right_knee": 15.3
+        }
+      },
+      "creativity": {
+        "score": 65.2,
+        "mean_divergence": 0.45,
+        "std_divergence": 0.32,
+        "mean_motion": 0.58
+      },
+      "isolation": {
+        "score": 72.1,
+        "mean_coupling_ratio": 0.28,
+        "region_isolation": {
+          "arms": 85.0,
+          "legs": 70.0
+        }
+      },
+      "power": {
+        "score": 82.3,
+        "composite_score": 2.8,
+        "weighted_velocity_mean": 1.2,
+        "weighted_velocity_p95": 3.5,
+        "weighted_accel_mean": 0.8
+      },
+      "rhythm": {
+        "score": 68.9,
+        "consistency_score": 70.0,
+        "dtw_score": 67.8,
+        "peak_count": 24,
+        "cv": 0.25
+      },
+      "rom": {
+        "score": 75.6,
+        "grade": "B",
+        "mean_coverage": 82.0,
+        "active_joints": 15,
+        "static_joints": 3
+      },
+      "total_score": 73.8,
+      "grade": "B"
+    },
+    "alignment": {
+      "method": "dtw",
+      "aligned_pairs": 120,
+      "user_frames": 125,
+      "ref_frames": 118,
+      "duplicate_ratio": 0.04,
+      "warning": null
+    },
+    "meta": {
+      "metrics_run": [
+        "accuracy",
+        "creativity",
+        "isolation",
+        "power",
+        "rhythm",
+        "rom"
+      ],
+      "detail_level": "summary",
+      "user_fps": 30.0,
+      "user_total_frames": 125,
+      "reference_fps": 30.0,
+      "reference_total_frames": 118,
+      "warnings": []
+    }
+  },
+  "error": null
+}

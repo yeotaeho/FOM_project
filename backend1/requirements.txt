@@ -1,0 +1,29 @@
+# FOM backend1 — ROM, creativity, rhythm, isolation, accuracy
+# MediaPipe Tasks API (solutions 없음). 0.10.30은 Win+Py3.12에서 PoseLandmarker 크래시 — 0.10.31+
+# https://github.com/google-ai-edge/mediapipe/issues/6187
+
+# Core / ML
+numpy>=1.26.0
+pandas>=2.2.0
+scipy>=1.12.0
+fastdtw>=0.3.4
+opencv-python>=4.9.0
+mediapipe>=0.10.31,<0.11
+
+# API
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+httpx>=0.27.0
+pydantic>=2.6.0
+python-multipart>=0.0.9
+
+# Rhythm — beat 추출 (ffmpeg는 OS에 별도 설치)
+librosa>=0.10.0
+
+# Isolation — YOLO track + 기준 영상 다운로드
+ultralytics>=8.2.0
+lap>=0.5.12
+yt-dlp>=2024.1.0
+
+# Accuracy 렌더 스크립트 (선택)
+tqdm>=4.66.0

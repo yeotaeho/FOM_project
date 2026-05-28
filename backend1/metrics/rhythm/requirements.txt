@@ -1,0 +1,24 @@
+# ── Web Framework ─────────────────────────────────────────────────
+fastapi>=0.95.0
+uvicorn[standard]>=0.20.0
+python-multipart>=0.0.5      # FastAPI 파일 업로드 필수
+
+# ── 수치 연산 ──────────────────────────────────────────────────────
+numpy>=1.21.0
+scipy>=1.1.0                 # find_peaks (리듬 피크 검출)
+
+# ── 영상 처리 ──────────────────────────────────────────────────────
+opencv-python>=4.0.0         # 영상 읽기·쓰기·오버레이
+mediapipe>=0.10.0            # Tasks API PoseLandmarker (상한선 없음)
+
+# ── 오디오 분석 ────────────────────────────────────────────────────
+librosa>=0.9.0               # 비트 추출 (beat_track)
+
+# ── 외부 도구 (별도 설치 필요) ─────────────────────────────────────
+# ffmpeg — 오디오 합성용 (video_audio.py)
+# Windows: winget install ffmpeg
+# macOS:   brew install ffmpeg
+# Ubuntu:  apt install ffmpeg
+
+# ── 모델 파일 (자동 다운로드) ──────────────────────────────────────
+# pose_landmarker_full.task → 첫 실행 시 models/ 폴더에 자동 저장

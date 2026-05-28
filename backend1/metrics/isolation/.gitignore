@@ -1,0 +1,29 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Isolation — raw video (yt-dlp CLI download, Git 제외)
+data/raw/*
+!data/raw/.gitkeep
+
+# Isolation — extract JSON, beats cache
+data/artifacts/*
+!data/artifacts/.gitkeep
+
+# Isolation — YOLO / MediaPipe weights (자동 다운로드)
+data/models/*
+!data/models/.gitkeep
